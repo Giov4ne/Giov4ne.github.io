@@ -23,4 +23,6 @@ window.onload = ()=>{
     for(let i=0; i<=3; i++){
         proxImg(item++ % (max+1));
     }
+    let firstScrollPoint = window.scrollY + window.innerHeight;
+    window.scrollTo({top: firstScrollPoint, behavior: 'smooth'});
 }
