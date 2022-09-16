@@ -1,5 +1,5 @@
 let item = 0;   //contador de imagens solicitadas
-const max = 79; //número da última imagem
+const max = 15; //número da última imagem
 const updateRate = 2000;
 
 function proxImg(img){ //solicita nova imagem via fetch()
@@ -14,15 +14,9 @@ function proxImg(img){ //solicita nova imagem via fetch()
 }
 
 window.onload = setInterval( ()=>{
-    proxImg(item++ % (max+1));
-    let scrollPoint = window.scrollY + window.innerHeight;
-    window.scrollTo({top: scrollPoint, behavior: 'smooth'});
-}, updateRate);
-
-window.onload = ()=>{
-    for(let i=0; i<=3; i++){
+    if(item <= max){
         proxImg(item++ % (max+1));
+        let scrollPoint = window.scrollY + window.innerHeight;
+        window.scrollTo({top: scrollPoint, behavior: 'smooth'});
     }
-    let firstScrollPoint = window.scrollY + window.innerHeight;
-    window.scrollTo({top: firstScrollPoint, behavior: 'smooth'});
-}
+}, updateRate);
