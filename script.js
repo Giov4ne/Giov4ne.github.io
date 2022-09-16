@@ -14,7 +14,9 @@ function proxImg(img){ //solicita nova imagem via fetch()
 }
 
 window.onload = setInterval( ()=>{
-    proxImg(item++ % (max+1));
+    for(let i=0; i<=3; i++){
+        proxImg(item++ % (max+1));
+    }
     let scrollPoint = window.scrollY + window.innerHeight;
     window.scrollTo({top: scrollPoint, behavior: 'smooth'});
 }, updateRate);
