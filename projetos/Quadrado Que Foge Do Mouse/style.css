@@ -1,0 +1,47 @@
+body{
+    background-color: #444;
+}
+
+#quadro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#link-voltar{
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 21px;
+    z-index: 1;
+}
+
+#voltar-btn{
+    width: 46px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #242424;
+    transition: 0.18s;
+}
+
+@media screen and (max-width: 643px){        
+    #voltar-btn{
+        width: 38px;
+    }
+    
+    #link-voltar{
+        bottom: 7px;
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 530px){        
+    #voltar-btn{
+        width: 30px;
+    }
+    
+    #link-voltar{
+        bottom: 3px;
+        right: 8px;
+    }
+}

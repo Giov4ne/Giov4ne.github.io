@@ -1,0 +1,466 @@
+@import url('https://fonts#googleapis#com/css2?family=Saira+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #36416d;
+    background-image: url('./images/backgroundform.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    font-size: 16pt;
+}
+
+header{
+    margin: auto;
+    background-color: #293462;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  solid 1px #964040;
+    box-shadow: 0px 0px 50px 0px #F24C4C;
+}
+
+#logo{
+    transition: all 0.7s;
+    width: 120px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+#titulo{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+    color: #F24C4C;
+    text-shadow: 1.6px 1.6px 3px #f24c4c93;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+#subt{
+    color: #F24C4C;
+    text-shadow: 1.6px 1.6px 3px #f24c4c93;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    margin-right: 2%;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 0.5s;
+}
+
+
+form{
+    border-radius: 10px;
+    font-family: 'Saira Condensed', sans-serif;
+    width: clamp(510px, 50%, 860px);
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 22px;
+    text-align: center;
+    margin-top: 3%;
+    backdrop-filter: blur(4px);
+    background: #20294d6b;
+    box-shadow: 0px 0px 15px 4px #13182e98;
+}
+
+h3{
+    font-size: 1.3rem;
+    color: #be843ce8; /*#ba4747*/
+    text-shadow: 1.4px 1.4px 2.8px #b37f3f3b;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* todos os campos */
+input{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 0.9rem;
+    border: 0;
+    border-bottom: #EC9B3B solid 1px;
+    background-color: #2934628c;
+    color: #be843ce8;
+    padding: 4px;
+    height: 80%;
+}
+
+input::placeholder{
+    color: #be843ce8;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-style: oblique;
+    border-bottom: #EC9B3B solid 2px;
+}
+
+input:focus::placeholder{
+    font-style: oblique;
+}
+
+.valid-invalid:valid, #nascinput:valid{ 
+    border-color: #10ad10;
+}
+
+.valid-invalid:invalid, #nascinput:invalid{ 
+    border-color: #F24C4C;
+}
+
+/* Botão de enviar */
+#enviabtn{
+    border: solid 1px #EC9B3B;
+    color: #F24C4C;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px 0px 4px 4px;
+    transition: all 0.6s;
+    width: 30%;
+    min-width: 80px;
+    margin: auto;
+}
+
+#enviabtn:hover{
+    border-radius: 4px 0px 10px 4px;
+    transition: all 0.6s;
+    transform: scale(0.915); 
+}
+
+#enviabtn:active{
+    transition: all 0s;
+    background: linear-gradient(90deg, #ec9c3b2c 0%, #ec9c3b1f 100%);
+    font-style: normal;
+    color: #f84444;
+}
+
+/* Campo de Gênero */
+
+#genero {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 0.9rem;
+    border: 0;
+    border-bottom: #F24C4C solid 1px;
+    background-color: #2934628c;
+    color: #be843ce8;
+    padding: 4px;
+    height: 100%;
+}
+
+#genero:focus {
+    font-style: oblique;
+}
+
+#gen {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 0.9rem;
+    border: 0;
+    backdrop-filter: blur(4px);
+    background-color: #293462;
+    color: #f15656d5;
+    padding: 4px;
+    font-style: oblique;
+}
+
+.select{
+    background-color: #293462;
+}
+
+/* label e input nascimento */
+
+#labelnasc {
+    color: #f15656d5;
+    text-align: left;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+/* checkbox termos e licença */ 
+
+#licenca {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 0.9rem;
+    color: #f15656d5;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#termos {
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* GRID */
+
+form {
+    display: grid;
+    grid-template-rows: repeat(11, 0.8fr);
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+}
+
+h3 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#nome {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#sobrenome {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#apelido {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+#mail {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+#senha {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+#confirmsenha {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+#fone {
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+#cpf {
+    grid-area: 7 / 1 / 8 / 3;
+}
+
+#labelnasc {
+    grid-area: 8 / 1 / 9 / 2;
+}
+
+#nascinput {
+    grid-area: 8 / 2 / 9 / 3;
+}
+
+#genero {
+    grid-area: 9 / 1 / 10 / 3;
+}
+
+#licenca {
+    grid-area: 10 / 1 / 11 / 2;
+}
+
+#termos {
+    grid-area: 10 / 2 / 11 / 3;
+}
+
+#enviabtn {
+    grid-area: 11 / 1 / 12 / 3;
+}
+
+#link-voltar{
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 21px;
+    z-index: 1;
+}
+
+#voltar-btn{
+    width: 46px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #242424;
+    transition: 0.18s;
+}
+
+.resp{
+    color: rgb(56, 176, 164);
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid #F24C4C;
+    color: white;
+    background: #b00d0d70;
+    padding: 1%;
+}
+
+#avisos{
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: clamp(200px, 35%, 600px);
+    box-shadow: 0px 0px 15px 4px #13182e7c;
+}
+
+#imagem-alerta{
+    width: 30px;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    float: left;
+    margin: 2px 0 2px 2px;
+}
+
+@media screen and (max-width: 1200px){
+    #imagem-alerta{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    :root{
+        font-size: 12pt;
+    }
+
+    #logo{
+        width: 100px;
+        padding: 10px;
+    }
+
+    form{
+        width: clamp(382px, 80%, 640px);
+        padding: 18px;
+        margin-bottom: 35px;
+        margin-top: 5%;
+        grid-row-gap: 5px;
+        grid-column-gap: 8px;
+    }
+
+    input{
+        padding: 5px;
+        height: 68%;
+    }
+}
+
+@media screen and (max-width: 643px){        
+    #voltar-btn{
+        width: 38px;
+    }
+    
+    #link-voltar{
+        bottom: 7px;
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 530px){        
+    #voltar-btn{
+        width: 30px;
+    }
+    
+    #link-voltar{
+        bottom: 3px;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #logo{
+        width: 80px;
+        padding: 5px;
+    }
+    
+    #titulo{
+        font-size: 1.4rem;
+        margin-top: 6%;
+    }
+
+    #subt{
+        font-size: 1.2rem;
+    }
+
+    input{
+        padding: 3px;
+        height: 62%;
+    }
+
+    form {
+        width: clamp(150px, 82%, 430px);
+        grid-template-rows: repeat(13, 0.8fr);
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0px;
+        grid-column-gap: 4px;
+    }
+    
+    h3 {
+        grid-area: 1 / 1 / 2 / 3;
+        font-size: 1.1rem;
+    }
+    
+    #nome {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+    
+    #sobrenome {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    
+    #apelido {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+    
+    #mail {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+    
+    #senha {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+    
+    #confirmsenha {
+        grid-area: 7 / 1 / 8 / 3;
+    }
+    
+    #fone {
+        grid-area: 8 / 1 / 9 / 3;
+    }
+    
+    #cpf {
+        grid-area: 9 / 1 / 10 / 3;
+    }
+    
+    #labelnasc {
+        grid-area: 10 / 1 / 11 / 2;
+    }
+    
+    #nascinput {
+        grid-area: 10 / 2 / 11 / 3;
+    }
+    
+    #genero {
+        grid-area: 11 / 1 / 12 / 3;
+    }
+    
+    #licenca {
+        grid-area: 12 / 1 / 13 / 2;
+    }
+    
+    #termos {
+        grid-area: 12 / 2 / 13 / 3;
+    }
+    
+    #enviabtn {
+        grid-area: 13 / 1 / 14 / 3;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #subt{
+        display: none;
+    }
+
+    header{
+        min-width: 200px;
+    }
+}
