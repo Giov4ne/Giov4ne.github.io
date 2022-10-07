@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Minha primeira calculadora</title>
+</head>
+<body>
+    <div id="calculator">
+
+        <h2 id="title">Calculadora</h2>
+
+        <input type="text" id="output" disabled />
+
+        <button id="g1" class="buttons">CE</button>
+        <button id="g2" class="buttons">DL</button>
+        <button id="g3" class="buttons" onclick="insert('+')">+</button>
+        <button id="g4" class="buttons" onclick="insert('-')">-</button>
+            
+        <button id="g5" class="buttons" onclick="insert('7')">7</button>
+        <button id="g6" class="buttons" onclick="insert('8')">8</button>
+        <button id="g7" class="buttons" onclick="insert('9')">9</button>
+        <button id="g8" class="buttons" onclick="insert('*')">x</button>
+            
+        <button id="g9" class="buttons" onclick="insert('4')">4</button>
+        <button id="g10" class="buttons" onclick="insert('5')">5</button>
+        <button id="g11" class="buttons" onclick="insert('6')">6</button>
+        <button id="g12" class="buttons" onclick="insert('/')">/</button>
+            
+        <button id="g13" class="buttons" onclick="insert('1')">1</button>
+        <button id="g14" class="buttons" onclick="insert('2')">2</button>
+        <button id="g15" class="buttons" onclick="insert('3')">3</button>
+        <button class="buttons" id="equal">=</button>
+            
+        <button class="buttons" id="zero" onclick="insert('0')">0</button>
+        <button id="g18" class="buttons" onclick="insert('.')">.</button>
+            
+    </div>
+    <a href="../../projetos.html" id="link-voltar">
+        <img src="../../icons/voltar.svg" id="voltar-btn" title="Voltar" alt="voltar" />
+    </a>
+</body>
+</html>

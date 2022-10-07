@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+:root {
+    font-size: 18pt;
+}
+
+@media screen and (max-width: 570px) {
+    :root {
+        font-size: 13pt;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(219, 219, 219);
+}
+
+header {
+    display: flex;
+    border: 1px solid black;
+    background: rgb(36, 36, 36);
+    align-items: center;
+    width: 100%;
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    border: 1px solid black;
+    background: rgb(36, 36, 36);
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.mail-tel {
+    text-decoration: none;
+    color: orange;
+}
+
+.mail-tel:hover {
+    text-decoration: underline;
+}
+
+#pt1, #pt2, #barra-pesquisa  {
+    display: flex;
+    align-items: center;
+}
+
+#pt1 {
+    margin-left: 30px;
+}
+
+#pt2 {
+    margin-right: 30px;
+}
+
+#navlinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.links, #barra-pesquisa {
+    margin-left: 50px;
+}
+
+#search {
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#search:focus {
+    background-color: rgb(226, 226, 226);
+}
+
+.ico-botao {
+    width: 40px;
+    height: 40px;
+}
+
+#srcbot:hover {
+    cursor: pointer;
+}
+
+.links {
+    text-decoration: none;
+    color: orange;
+    font-size: 0.9rem;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.links:active, .mail-tel:active {
+    color: rgb(255, 123, 0);
+}
+
+#logo {
+    width: 117px;
+    height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    #pt1 {
+        margin-left: 5px;
+    }
+
+    #pt2 {
+        margin-left: 5px;
+    }
+
+    .ico-botao {
+        width: 40px;
+        height: 40px;
+    }
+
+    .links, #barra-pesquisa {
+        margin-left: 20px;
+    }
+
+    #search {
+        width: 200px;
+        padding-left: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #search {
+        width: 150px;
+        height: 25px;
+        padding-left: 3px;
+    }
+
+    .ico-botao {
+        width: 23px;
+        height: 23px;
+        margin: 0;
+    }
+
+    .links {
+        font-size: 0.8rem;
+    }
+
+    #pt1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+}
+
+#banner {
+    width: 90%;
+    margin: auto;
+}
+
+#hero {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin-top: 160px;
+}
+
+#hero:hover {
+    cursor: pointer;
+}
+
+#produtos {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    margin: 8px;
+    margin-top: 10%;
+    font-size: 1.15rem;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.p-foot {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+#container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.flex-instruments {
+    flex: 1 0 20%;
+    border: 1px solid rgb(36, 36, 36);
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 350px;
+    max-width: 450px;
+    min-height: 485px;
+    text-align: center;
+    background: white;
+    transition: 0.2s;
+    box-shadow: 3.5px 3.5px 12px rgb(107, 107, 107);
+    border-radius: 8px;
+}
+
+.flex-instruments:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 2.7px 2.7px 20px 1px rgb(71, 71, 71);
+}
+
+.flex-imgs {
+    width: 310px;
+    height: 310px;
+    border-radius: 8px;
+}
+
+h3 {
+    color: rgb(255, 123, 0);
+    font-size: 0.96rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-shadow: 0.3px 0.3px 0.8px rgb(255, 123, 0);
+}
+
+figcaption {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.7rem;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.redes-sociais {
+    margin: 10px;
+    margin-left: 0;
+    width: 45px;
+    height: 45px;
+}
+
+#content {
+    margin: auto;
+    margin-top: 165px;
+    text-align: center;
+    width: 60%;
+}
+
+#nomeloja {
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: rgb(255, 94, 0);
+    text-shadow: 1.3px 1.3px 2px rgb(22, 22, 22);
+}
+
+.p-about {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+#img-logo {
+    width: 45%;
+    margin: 6%;
+    margin-bottom: 10%;
+    box-shadow: 4.5px 4.5px 12px rgb(93, 93, 93);
+}
+
+#link-voltar{
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 21px;
+    z-index: 1;
+}
+
+#voltar-btn{
+    width: 46px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #242424;
+    transition: 0.18s;
+}
+
+@media screen and (max-width: 643px){        
+    #voltar-btn{
+        width: 38px;
+    }
+    
+    #link-voltar{
+        bottom: 7px;
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #logo {
+        width: 110px;
+        height: 93px;
+    }
+
+    .flex-instruments {
+        max-width: 230px;
+        min-height: 0;
+        margin-bottom: 10px;
+    }
+    
+    .flex-imgs {
+        width: 180px;
+        height: 180px;
+    }
+
+    .redes-sociais {
+        width: 35px;
+        height: 35px;
+    }
+
+    #content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #search, #srcbot {
+        display: none;
+    }
+
+    .ico-botao {
+        width: 20px;
+        height: 20px;
+    }
+
+    #pt2 {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    #voltar-btn{
+        width: 30px;
+    }
+    
+    #link-voltar{
+        bottom: 3px;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #logo {
+        width: 90px;
+    }
+}
