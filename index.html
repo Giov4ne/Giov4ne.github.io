@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/logo.svg" />
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-    <title>Exemplo XHR</title>
+    <title>Portfólio</title>
 </head>
 <body>
-    <h1>Os melhores churros do mundo</h1>
-    <div id="placeholder"></div>
+    
+    <header id="cabecalho">
+        <a href="./index.html">
+            <img src="./icons/logo.svg" alt="logo" id="logo" />
+        </a>
+        <h1 id="header-title">Portfólio 👾</h1>
+    </header>
+
+    <div class="content">
+        <main>
+            <section id="info">
+                    <div id="personal-card">
+                        <img src="./img/fundo-gio.png" alt="fundo" id="img-fundo-card">
+                        <img src="./img/giovane.png" alt="foto de perfil" id="img-perfil-card">
+                        <div id="conteudo-card">
+                            <h3 id="subtitle-card">Giovane William Budal</h3>
+                            <p id="desc-card">Jovem de <span id="calc-idade">17</span> anos, estudante de Desenvolvimento de Software Full Stack Jr. na StackX e cursando técnico em informática na escola Cedup.</p>
+                            <div id="engloba-redes">
+                                <a href="mailto:giovanewbudal@gmail.com" class="links-redes"><img src="./icons/gmail.svg" class="redes" alt="gmail"></a>
+                                <a href="https://www.linkedin.com/in/giovane-william-budal/" class="links-redes" target="_blank"><img src="./icons/linkedin.svg" class="redes" alt="linkedin"></a>
+                                <a href="https://github.com/Giov4ne" class="links-redes" target="_blank"><img src="./icons/github.svg" class="redes" alt="github"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="index">
+                        <h2 class="title-section">Acesse:</h2>
+                        <ul id="engloba-index">
+                            <li class="list-index">
+                                <a href="https://github.com/Giov4ne/Giov4ne.github.io" target="_blank" class="links-index">👉 Meu Repositório</a>
+                            </li>
+                            <li class="list-index">
+                                <a href="./projetos.html" class="links-index">👉 Meus Projetos</a>
+                            </li>
+                            <li class="list-index">
+                                <a href="./creditos.html" class="links-index">👉 Créditos</a>
+                            </li>
+                        </ul>
+                    </section>
+
+            </section>
+        </main>
+    </div>
+
 </body>
 </html>

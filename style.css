@@ -1,27 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
 body{
-    background: #333;
+    background-color: #414040;
 }
 
-h1{
+:root{
+    font-size: 16pt;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho{
     color: #fff;
-    font-size: 28pt;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    text-shadow: 2px 2px 3px #000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #414040;
+    height: 80px;
 }
 
-#placeholder{
+#cabecalho2{
+    color: #fff;
+    width: 100%;
+    background-color: #ff8c00;
+    height: 80px;
+}
+
+#header-title{
+    font-size: 1.8rem;
+    margin-right: 80px;
+}
+
+#logo{
+    margin-left: 80px;
+    width: 65px;
+}
+
+#info{
+    background-color: #ff8c00;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content > section.project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects{
+    padding: 55px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#placeholder img{
-    width: 400px;
-    height: 400px;
-    margin: 1pc 1pc 2pc 1pc;
-    border: 4px solid #000;
-    border-radius: 1pc;
-    box-shadow: 0px 0px 13px #aaa;
+.project{
+    width: 78%;
+    max-width: 1500px;
+    min-height: 285px;
+    margin: 85px;
+    background-color: #ff8c00;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 2.5px 3px 12px #313131;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-rows: 1fr;
+}
+
+.project-images{
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.project-text{
+    color: #fff;
+    padding: 20px 20px 25px 20px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.text-project{
+    text-shadow: 0 0 4px #000;  
+    font-size: 0.8rem;
+}
+
+.title-project{
+    color: #414040;
+    text-shadow: 0 0 4px #995400; 
+    font-size: 1.2rem;
+}
+
+.title-section, .title-section2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.title-section2{
+    padding: 20px;
+}
+
+#personal-card{
+    background-color: #555;
+    width: 320px;
+    min-width: 320px;
+    height: 365px;
+    border: 2.5px solid #000;
+    border-radius: 12px;
+    box-shadow: 2.5px 3px 12px #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+#img-fundo-card{
+    width: 100%;
+    height: 95px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #000;
+}
+
+#img-perfil-card{
+    width: 85px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+#conteudo-card{
+    width: 300px;
+    padding: 12px;
+    position: absolute;
+    margin-top: 140px;
+    z-index: 1;
+}
+
+#conteudo-card:hover{
+    cursor: default;
+}
+
+#subtitle-card{
+    text-align: center;
+    margin-bottom: 6px; 
+    color: #ffae4a;
+    text-shadow: 0 0 4px #000; 
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+}
+
+#desc-card{
+    text-align: justify;
+    color: #e9e9e9;
+    text-shadow: 0 0 3px #000;
+    font-size: 0.77rem;
+}
+
+#engloba-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links-redes, #link-voltar{
+    border-radius: 50%;
+}
+
+.redes, #voltar-btn{
+    width: 46px;
+    margin: 15px 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #242424;
+    transition: 0.18s;
+}
+
+#voltar-btn{
+    margin: 0;
+}
+
+#link-voltar{
+    position: fixed;
+    bottom: 15px;
+    right: 21px;
+    z-index: 1;
+}
+
+.redes:hover{
+    box-shadow: 0 0 9px #202020;
+}
+
+.list-index{
+    list-style: none;
+    background-color: #555;
+    border: 1.8px solid #000;
+    box-shadow: 2.5px 3px 6px #313131;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 9px 10px;
+    font-size: 0.8rem;
+    transition: 0.28s;
+}
+
+.list-index:hover{
+    cursor: pointer;
+    background-color: #7a7a7a;
+}
+
+.link-project:hover{
+    cursor: pointer;
+    background-color: #888;
+    box-shadow: 2px 2px 5px #555;
+    text-shadow: 0 0 3px #000;
+}
+
+.links-index, .link-project{
+    text-decoration: none;
+    color: #e9e9e9;
+    text-shadow: 0 0 3px #1f1f1f; 
+}
+
+.link-project{
+    background-color: #6f6f6f;
+    box-shadow: 2px 2px 7px #313131;
+    padding: 7px 9px;
+    border-radius: 12px;
+    margin: 16px 0;
+    font-size: 0.8rem;
+    transition: 0.28s;
+}
+
+.creditos{
+    background-color: #ff8c00;
+}
+
+@media screen and (max-width: 1000px){
+    #projects{
+        padding: 40px 0 0 0;
+    }
+
+    .project{
+        width: 70%;
+        min-height: 0;
+        max-height: 845px;
+        margin: 70px;
+        border-radius: 30px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .project-images{
+        width: 100%;
+        height: 100%;
+        border-radius: 16px 16px 0 0;
+        grid-area: 1 / 1 / 2 / 2;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    
+    .project-text{
+        padding: 30px 30px 40px 30px;
+        grid-area: 2 / 1 / 3 / 3;
+    }
+}
+
+@media screen and (max-width: 643px){
+    :root{
+        font-size: 15pt;
+    }
+
+    #header-title{
+        margin-right: 50px;
+    }
+
+    #logo{
+        margin-left: 50px;
+    }
+
+    #index{
+        margin-top: 10px;
+    }
+    
+    #voltar-btn{
+        width: 38px;
+    }
+    
+    #link-voltar{
+        bottom: 7px;
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    :root{
+        font-size: 13pt;
+    }
+
+    #personal-card{
+        width: 280px;
+        min-width: 280px;
+        height: 300px;
+    }
+
+    #conteudo-card{
+        width: 260px;
+        padding: 10px;
+        margin-top: 126px;
+    }
+
+    .redes{
+        width: 35px;
+    }
+
+    #img-fundo-card{
+        height: 85px;
+    }
+    
+    #img-perfil-card{
+        width: 78px;
+        margin-top: 40px;
+    }
+
+    #header-title{
+        margin-right: 20px;
+    }
+
+    #logo{
+        margin-left: 20px;
+        width: 55px;
+    }
+    
+    #voltar-btn{
+        width: 30px;
+    }
+    
+    #link-voltar{
+        bottom: 3px;
+        right: 8px;
+    }
 }
