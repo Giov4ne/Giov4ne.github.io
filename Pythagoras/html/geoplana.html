@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../imgs, icons/logo.svg" />
+    <title>Pythagoras</title>
+</head>
+<body>
+    
+    <header>
+        <h1 id="title">Pythagoras</h1>
+    </header>
+
+    <aside id="barra-lateral" class="barra-lateral-off">
+        <div>
+            <img src="../imgs, icons/logo.svg" id="logo" alt="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li id="campo-pesquisa">
+                    <img src="../imgs, icons/search.svg" alt="ícone" class="icones" />
+                    <input type="search" placeholder="Pesquisar..." id="barra-pesquisa" class="itns-laterais" />
+                </li>
+                <li class="lista-lateral">
+                    <a href="./calculadora.html" class="links-laterais">
+                        <img src="../imgs, icons/calculadora.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Calculadora</span>
+                    </a>
+                </li>
+                <li class="lista-lateral">
+                    <a href="./geratabuada.html" class="links-laterais">
+                        <img src="../imgs, icons/tabuada.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Gerador de Tabuada</span>
+                    </a>
+                </li>
+                <li class="lista-lateral">
+                    <a href="./segundograu.html" class="links-laterais">
+                        <img src="../imgs, icons/seggrau.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Equação 2° Grau</span>
+                    </a>
+                </li>
+                <li class="lista-lateral">
+                    <a href="./pitagoras.html" class="links-laterais">
+                        <img src="../imgs, icons/pitagoras.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Teorema de Pitágoras</span>
+                    </a>
+                </li>
+                <li class="lista-lateral">
+                    <a href="./geoplana.html" class="links-laterais">
+                        <img src="../imgs, icons/geoplana.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Geometria Plana</span>
+                    </a>
+                </li>
+                <li class="lista-lateral">
+                    <a href="./geoespacial.html" class="links-laterais">
+                        <img src="../imgs, icons/geoespacial.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Geometria Espacial</span>
+                    </a>
+                </li>
+                <li class="lista-lateral">
+                    <a href="./conta.html" class="links-laterais">
+                        <img src="../imgs, icons/conta.svg" alt="ícone" class="icones" />
+                        <span class="itns-laterais">Conta</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id="conteudo" class="centralizar-conteudo">
+        <div id="geoplana">
+            <h2 class="div-titles">Área de Figuras Planas</h2>
+            <div>
+                <label for="select">Figura:</label>
+                <select id="select">
+                    <option value="retangulo" selected>Retângulo</option>
+                    <option value="circulo">Círculo</option>
+                    <option value="triangulo">Triângulo</option>
+                    <option value="coroa">Coroa Circular</option>
+                </select>
+            </div>
+            <div id="conteudo-geoplana"></div>
+        </div>
+        <a href="../../../projetos.html" id="link-voltar">
+            <img src="../../../icons/voltar.svg" id="voltar-btn" title="Voltar" alt="voltar" />
+        </a>
+    </div>
+
+
+
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/geoplana.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../imgs, icons/logo.svg" />
+    <title>Cadastrar-se em Pythagoras</title>
+</head>
+<body>
+    <div id="cadastro-content">
+        <h1 id="title-cadastro">Você precisa se cadastrar para acessar Pythagoras</h1>
+        <form id="formulario">
+            <h2 id="title-form">Insira seus dados</h2>
+            <input type="text" id="nome" class="campos" placeholder="Nome" pattern="[A-Za-zÀ-ú']{2,}" required />
+            <input type="text" id="sobrenome" class="campos" placeholder="Sobrenome" pattern="[A-Za-zÀ-ú ']{2,}" required />
+            <input type="text" id="uid" class="campos" placeholder="Como gostaria de ser chamado?" pattern="^[a-zA-Z0-9_-]{3,16}$" required />
+            <input type="email" id="email" class="campos" placeholder="Email" pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$" required />
+            <input type="password" id="pwd" class="campos" placeholder="Senha" pattern="(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$" required />
+            <input type="password" id="confirm-pwd" class="campos" placeholder="Confirmar senha" required />
+            <div id="campo-enviar">
+                <input type="submit" id="enviar" value="Cadastrar-se" />
+            </div>
+        </form>
+        <a href="../../../projetos.html" id="link-voltar">
+            <img src="../../../icons/voltar.svg" id="voltar-btn" title="Voltar" alt="voltar" />
+        </a>
+    </div>
+    <script src="../js/validator.js"></script>
+</body>
+</html>
