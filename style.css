@@ -15,13 +15,7 @@ body{
     font-size: 16pt;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#cabecalho{
+#cabecalho, #cabecalho2{
     color: #fff;
     width: 100%;
     display: flex;
@@ -33,20 +27,17 @@ header{
 }
 
 #cabecalho2{
-    color: #fff;
-    width: 100%;
     background-color: #ff8c00;
-    height: 80px;
 }
 
 #header-title{
-    font-size: 1.8rem;
-    margin-right: 80px;
+    font-size: 1.7rem;
+    margin: 40px;
 }
 
 #logo{
-    margin-left: 80px;
-    width: 65px;
+    margin: 40px;
+    width: 70px;
 }
 
 #info{
@@ -102,7 +93,7 @@ header{
 
 .text-project{
     text-shadow: 0 0 4px #000;  
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .title-project{
@@ -124,7 +115,7 @@ header{
     background-color: #555;
     width: 320px;
     min-width: 320px;
-    height: 365px;
+    height: 368px;
     border: 2.5px solid #000;
     border-radius: 12px;
     box-shadow: 2.5px 3px 12px #313131;
@@ -166,7 +157,7 @@ header{
     margin-bottom: 6px; 
     color: #ffae4a;
     text-shadow: 0 0 4px #000; 
-    font-size: 1rem;
+    font-size: 1.05rem;
     letter-spacing: 0.8px;
 }
 
@@ -174,7 +165,7 @@ header{
     text-align: justify;
     color: #e9e9e9;
     text-shadow: 0 0 3px #000;
-    font-size: 0.77rem;
+    font-size: 0.8rem;
 }
 
 #engloba-redes{
@@ -202,7 +193,7 @@ header{
 #link-voltar{
     position: fixed;
     bottom: 15px;
-    right: 21px;
+    right: 25px;
     z-index: 1;
 }
 
@@ -218,7 +209,7 @@ header{
     border-radius: 8px;
     margin: 16px;
     padding: 9px 10px;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     transition: 0.28s;
 }
 
@@ -234,7 +225,7 @@ header{
     text-shadow: 0 0 3px #000;
 }
 
-.links-index, .link-project{
+.links-index, .link-project a{
     text-decoration: none;
     color: #e9e9e9;
     text-shadow: 0 0 3px #1f1f1f; 
@@ -245,7 +236,7 @@ header{
     box-shadow: 2px 2px 7px #313131;
     padding: 7px 9px;
     border-radius: 12px;
-    margin: 16px 0;
+    width: 180px;
     font-size: 0.8rem;
     transition: 0.28s;
 }
@@ -261,26 +252,20 @@ header{
 
     .project{
         width: 70%;
-        min-height: 0;
-        max-height: 845px;
         margin: 70px;
         border-radius: 30px;
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
     
     .project-images{
         width: 100%;
         height: 100%;
         border-radius: 16px 16px 0 0;
-        grid-area: 1 / 1 / 2 / 2;
-        grid-area: 1 / 1 / 2 / 3;
     }
     
     .project-text{
         padding: 30px 30px 40px 30px;
-        grid-area: 2 / 1 / 3 / 3;
     }
 }
 
@@ -290,11 +275,11 @@ header{
     }
 
     #header-title{
-        margin-right: 50px;
+        margin: 30px;
     }
 
     #logo{
-        margin-left: 50px;
+        margin: 30px;
     }
 
     #index{
@@ -306,8 +291,12 @@ header{
     }
     
     #link-voltar{
-        bottom: 7px;
-        right: 12px;
+        bottom: 12px;
+        right: 22px;
+    }
+
+    .link-project{
+        width: 172px;
     }
 }
 
@@ -319,7 +308,7 @@ header{
     #personal-card{
         width: 280px;
         min-width: 280px;
-        height: 300px;
+        height: 315px;
     }
 
     #conteudo-card{
@@ -342,20 +331,38 @@ header{
     }
 
     #header-title{
-        margin-right: 20px;
+        margin: 20px;
     }
 
     #logo{
-        margin-left: 20px;
+        margin: 20px;
         width: 55px;
     }
-    
-    #voltar-btn{
-        width: 30px;
+
+    .project{
+        width: 85%;
+        min-width: 155px;
+        margin: 70px;
     }
-    
-    #link-voltar{
-        bottom: 3px;
-        right: 8px;
+
+    .project-text{
+        padding: 16px 16px 26px 16px;
+    }
+
+    .link-project{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .link-project{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .link-project{
+        width: 100%;
+        text-align: center;
     }
 }
