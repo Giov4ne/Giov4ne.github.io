@@ -468,7 +468,7 @@ label[for="select"]{
     border-radius: 50%;
     position: fixed;
     bottom: 15px;
-    right: 21px;
+    right: 25px;
     z-index: 1;
 }
 
@@ -505,19 +505,8 @@ label[for="select"]{
     }
     
     #link-voltar{
-        bottom: 7px;
-        right: 12px;
-    }
-}
-
-@media screen and (max-width: 530px){        
-    #voltar-btn{
-        width: 30px;
-    }
-    
-    #link-voltar{
-        bottom: 3px;
-        right: 8px;
+        bottom: 12px;
+        right: 22px;
     }
 }
 

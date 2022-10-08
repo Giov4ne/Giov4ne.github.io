@@ -13,8 +13,8 @@ body{
 #link-voltar{
     border-radius: 50%;
     position: fixed;
-    bottom: 15px;
-    right: 21px;
+    bottom: 12px;
+    right: 22px;
     z-index: 1;
 }
 
@@ -31,18 +31,7 @@ body{
     }
     
     #link-voltar{
-        bottom: 7px;
-        right: 12px;
-    }
-}
-
-@media screen and (max-width: 530px){        
-    #voltar-btn{
-        width: 30px;
-    }
-    
-    #link-voltar{
-        bottom: 3px;
-        right: 8px;
+        bottom: 12px;
+        right: 22px;
     }
 }
