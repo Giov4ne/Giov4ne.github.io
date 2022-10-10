@@ -35,6 +35,11 @@ body{
     margin: 40px;
 }
 
+#cabecalho2 > #header-title{
+    color: #111;
+    text-shadow: 0 0 1.5px #222;
+}
+
 #logo{
     margin: 40px;
     width: 70px;
@@ -114,9 +119,9 @@ body{
 
 #personal-card{
     background-color: #555;
-    width: 320px;
-    min-width: 320px;
-    height: 368px;
+    width: 370px;
+    min-width: 370px;
+    height: 465px;
     border: 2.5px solid #000;
     border-radius: 12px;
     box-shadow: 2.5px 3px 12px #313131;
@@ -128,24 +133,24 @@ body{
 
 #img-fundo-card{
     width: 100%;
-    height: 95px;
+    height: 110px;
     border-radius: 10px 10px 0 0;
     border-bottom: 2px solid #000;
 }
 
 #img-perfil-card{
-    width: 85px;
+    width: 94px;
     border: 2px solid #000;
     border-radius: 100%;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #conteudo-card{
-    width: 300px;
+    width: 350px;
     padding: 12px;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 155px;
     z-index: 1;
 }
 
@@ -199,7 +204,7 @@ body{
 }
 
 .redes:hover, #voltar-btn:hover{
-    filter: saturate(250%);
+    filter: saturate(260%);
 }
 
 .list-index{
@@ -243,7 +248,7 @@ body{
 }
 
 .creditos{
-    padding: 30px;
+    padding: 28px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -285,27 +290,29 @@ body{
     }
 
     #personal-card{
-        width: 410px;
-        min-width: 410px;
-        height: 476px;
+        width: 500px;
+        min-width: 500px;
+        height: 615px;
         border: 2.7px solid #000;
+        border-radius: 16px;
     }
     
     #img-fundo-card{
-        height: 125px;
+        height: 150px;
         border-bottom: 2.7px solid #000;
+        border-radius: 14px 14px 0 0;
     }
     
     #img-perfil-card{
-        width: 110px;
+        width: 122px;
         border: 2.7px solid #000;
-        margin-top: 68px;
+        margin-top: 83px;
     }
     
     #conteudo-card{
-        width: 410px;
+        width: 485px;
         padding: 25px;
-        margin-top: 170px;
+        margin-top: 200px;
     }
     
     .redes, #voltar-btn{
@@ -375,23 +382,25 @@ body{
     }
 
     #personal-card{
-        width: 550px;
-        min-width: 550px;
-        height: 645px;
+        width: 700px;
+        min-width: 700px;
+        height: 850px;
+        border-radius: 22px;
     }
     
     #img-fundo-card{
-        height: 180px;
+        height: 210px;
+        border-radius: 22px 22px 0 0;
     }
     
     #img-perfil-card{
-        width: 150px;
-        margin-top: 100px;
+        width: 170px;
+        margin-top: 120px;
     }
     
     #conteudo-card{
-        width: 540px;
-        margin-top: 247px;
+        width: 660px;
+        margin-top: 290px;
     }
     
     .redes, #voltar-btn{
@@ -467,23 +476,25 @@ body{
     }
 
     #personal-card{
-        width: 800px;
-        min-width: 800px;
-        height: 940px;
+        width: 1000px;
+        min-width: 1000px;
+        height: 1230px;
+        border-radius: 36px;
     }
     
     #img-fundo-card{
-        height: 280px;
+        height: 315px;
+        border-radius: 36px 36px 0 0;
     }
     
     #img-perfil-card{
-        width: 200px;
-        margin-top: 165px;
+        width: 250px;
+        margin-top: 175px;
     }
     
     #conteudo-card{
-        width: 760px;
-        margin-top: 390px;
+        width: 930px;
+        margin-top: 440px;
     }
     
     .redes, #voltar-btn{
@@ -558,23 +569,25 @@ body{
     }
 
     #personal-card{
-        width: 1100px;
-        min-width: 1100px;
-        height: 1250px;
+        width: 1400px;
+        min-width: 1400px;
+        height: 1686px;
+        border-radius: 45px;
     }
     
     #img-fundo-card{
-        height: 360px;
+        height: 450px;
+        border-radius: 45px 45px 0 0;
     }
     
     #img-perfil-card{
-        width: 280px;
-        margin-top: 200px;
+        width: 350px;
+        margin-top: 260px;
     }
     
     #conteudo-card{
-        width: 1000px;
-        margin-top: 510px;
+        width: 1270px;
+        margin-top: 650px;
     }
     
     .redes, #voltar-btn{
@@ -653,6 +666,10 @@ body{
     .project-text{
         padding: 30px 30px 40px 30px;
     }
+
+    .creditos{
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 643px){
@@ -662,6 +679,10 @@ body{
 
     #header-title, #logo{
         margin: 30px;
+    }
+
+    #personal-card{
+        height: 455px;
     }
 
     #index{
@@ -680,6 +701,10 @@ body{
     .link-project{
         width: 172px;
     }
+
+    .creditos{
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 530px){
@@ -688,15 +713,15 @@ body{
     }
 
     #personal-card{
-        width: 280px;
-        min-width: 280px;
-        height: 315px;
+        width: 310px;
+        min-width: 310px;
+        height: 390px;
     }
 
     #conteudo-card{
-        width: 260px;
+        width: 290px;
         padding: 10px;
-        margin-top: 126px;
+        margin-top: 135px;
     }
 
     .redes{
@@ -704,12 +729,12 @@ body{
     }
 
     #img-fundo-card{
-        height: 85px;
+        height: 100px;
     }
     
     #img-perfil-card{
         width: 78px;
-        margin-top: 40px;
+        margin-top: 55px;
     }
 
     #header-title, #logo{
@@ -733,6 +758,10 @@ body{
     .link-project{
         width: 150px;
     }
+
+    .creditos{
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -741,9 +770,33 @@ body{
     }
 }
 
+@media screen and (max-width: 370px){
+    #personal-card{
+        width: 250px;
+        min-width: 250px;
+        height: 420px;
+    }
+
+    #conteudo-card{
+        width: 235px;
+    }
+}
+
 @media screen and (max-width: 320px){
     .link-project{
         width: 100%;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #personal-card{
+        width: 210px;
+        min-width: 210px;
+        height: 495px;
+    }
+
+    #conteudo-card{
+        width: 200px;
     }
 }
