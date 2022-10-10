@@ -184,7 +184,7 @@ body{
     margin: 15px 8px;
     border-radius: 50%;
     box-shadow: 0 0 6px #242424;
-    transition: 0.18s;
+    transition: 0.19s;
 }
 
 #voltar-btn{
@@ -198,8 +198,8 @@ body{
     z-index: 1;
 }
 
-.redes:hover{
-    box-shadow: 0 0 9px #202020;
+.redes:hover, #voltar-btn:hover{
+    filter: saturate(250%);
 }
 
 .list-index{
