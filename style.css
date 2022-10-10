@@ -109,6 +109,7 @@ body{
 
 .title-section2{
     padding: 20px;
+    background-color: #ff8c00;
 }
 
 #personal-card{
@@ -242,8 +243,393 @@ body{
 }
 
 .creditos{
-    background-color: #ff8c00;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
+
+.p-creditos, .a-creditos{
+    color: #e9e9e9;
+    text-shadow: 0 0 3px #000;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.quebrar-palavra{
+    word-break: break-all;
+}
+
+/*RESPONSIVIDADE PARA TELAS MAIORES: */
+
+@media screen and (min-width: 1750px){
+    :root{
+        font-size: 22pt;
+    }
+
+    #cabecalho, #cabecalho2{
+        height: 100px;
+    }
+
+    #header-title, #logo{
+        margin: 50px;
+    }
+
+    #logo{
+        width: 88px;
+    }
+
+    #info{
+        padding: 60px;
+    }
+
+    #personal-card{
+        width: 410px;
+        min-width: 410px;
+        height: 476px;
+        border: 2.7px solid #000;
+    }
+    
+    #img-fundo-card{
+        height: 125px;
+        border-bottom: 2.7px solid #000;
+    }
+    
+    #img-perfil-card{
+        width: 110px;
+        border: 2.7px solid #000;
+        margin-top: 68px;
+    }
+    
+    #conteudo-card{
+        width: 410px;
+        padding: 25px;
+        margin-top: 170px;
+    }
+    
+    .redes, #voltar-btn{
+        width: 58px;
+        margin: 15px 10px;
+    }
+    
+    #voltar-btn{
+        margin: 0;
+    }
+    
+    #link-voltar{
+        right: 28px;
+    }
+    
+    #projects{
+        padding: 70px 0 0 0;
+    }
+
+    .project{
+        width: 80%;
+        max-width: none;
+        margin: 92px;
+    }
+
+    .project-text{
+        padding: 25px 25px 35px 25px;
+    }
+
+    .link-project{
+        padding: 9px 11px;
+        width: 245px;
+    }
+    
+    .title-section2{
+        padding: 25px;
+    }
+
+    .creditos{
+        padding: 40px;
+    }
+
+    .p-creditos{
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 2500px){
+    :root{
+        font-size: 30pt;
+    }
+
+    #cabecalho, #cabecalho2{
+        height: 132px;
+    }
+
+    #header-title, #logo{
+        margin: 60px;
+    }
+
+    #logo{
+        width: 117px;
+    }
+
+    #info{
+        padding: 90px;
+    }
+
+    #personal-card{
+        width: 550px;
+        min-width: 550px;
+        height: 645px;
+    }
+    
+    #img-fundo-card{
+        height: 180px;
+    }
+    
+    #img-perfil-card{
+        width: 150px;
+        margin-top: 100px;
+    }
+    
+    #conteudo-card{
+        width: 540px;
+        margin-top: 247px;
+    }
+    
+    .redes, #voltar-btn{
+        width: 80px;
+        margin: 15px 10px;
+        transition: 0.18s;
+    }
+    
+    #voltar-btn{
+        margin: 0;
+    }
+    
+    #link-voltar{
+        bottom: 20px;
+        right: 35px;
+    }
+
+    .list-index{
+        margin: 22px;
+        padding: 16px 14px;
+    }
+    
+    #projects{
+        padding: 100px 0 0 0;
+    }
+
+    .project{
+        width: 79%;
+        margin: 135px;
+    }
+
+    .project-text{
+        padding: 40px 40px 60px 40px;
+    }
+
+    .link-project{
+        padding: 12px 14px;
+        width: 340px;
+    }
+    
+    .title-section2{
+        padding: 33px;
+    }
+
+    .creditos{
+        padding: 50px;
+    }
+
+    .p-creditos{
+        line-height: 52px;
+    }
+}
+
+@media screen and (min-width: 3300px){
+    :root{
+        font-size: 42pt;
+    }
+
+    #cabecalho, #cabecalho2{
+        height: 185px;
+    }
+
+    #header-title, #logo{
+        margin: 90px;
+    }
+
+    #logo{
+        width: 165px;
+    }
+
+    #info{
+        padding: 140px;
+    }
+
+    #personal-card{
+        width: 800px;
+        min-width: 800px;
+        height: 940px;
+    }
+    
+    #img-fundo-card{
+        height: 280px;
+    }
+    
+    #img-perfil-card{
+        width: 200px;
+        margin-top: 165px;
+    }
+    
+    #conteudo-card{
+        width: 760px;
+        margin-top: 390px;
+    }
+    
+    .redes, #voltar-btn{
+        width: 118px;
+        margin: 15px 12px;
+    }
+    
+    #voltar-btn{
+        margin: 0;
+    }
+    
+    #link-voltar{
+        bottom: 30px;
+        right: 45px;
+    }
+
+    .list-index{
+        margin: 30px;
+        padding: 22px 20px;
+    }
+    
+    #projects{
+        padding: 150px 0 0 0;
+    }
+
+    .project{
+        width: 77%;
+        margin: 220px;
+    }
+
+    .project-text{
+        padding: 50px 50px 70px 50px;
+    }
+
+    .link-project{
+        padding: 16px 20px;
+        width: 472px;
+    }
+    
+    .title-section2{
+        padding: 45px;
+    }
+
+    .creditos{
+        padding: 70px;
+    }
+
+    .p-creditos{
+        line-height: 73px;
+    }
+}
+
+@media screen and (min-width: 4800px){
+    :root{
+        font-size: 56pt;
+    }
+
+    #cabecalho, #cabecalho2{
+        height: 250px;
+    }
+
+    #header-title, #logo{
+        margin: 110px;
+    }
+
+    #logo{
+        width: 235px;
+    }
+
+    #info{
+        padding: 200px;
+    }
+
+    #personal-card{
+        width: 1100px;
+        min-width: 1100px;
+        height: 1250px;
+    }
+    
+    #img-fundo-card{
+        height: 360px;
+    }
+    
+    #img-perfil-card{
+        width: 280px;
+        margin-top: 200px;
+    }
+    
+    #conteudo-card{
+        width: 1000px;
+        margin-top: 510px;
+    }
+    
+    .redes, #voltar-btn{
+        width: 160px;
+        margin: 15px;
+    }
+    
+    #voltar-btn{
+        margin: 0;
+    }
+    
+    #link-voltar{
+        bottom: 38px;
+        right: 55px;
+    }
+
+    .list-index{
+        margin: 40px;
+        padding: 28px;
+    }
+    
+    #projects{
+        padding: 230px 0 0 0;
+    }
+
+    .project{
+        width: 75%;
+        margin: 290px;
+    }
+
+    .project-text{
+        padding: 60px 60px 85px 60px;
+    }
+
+    .link-project{
+        padding: 20px 28px;
+        width: 640px;
+    }
+    
+    .title-section2{
+        padding: 60px;
+    }
+
+    .creditos{
+        padding: 98px;
+    }
+
+    .p-creditos{
+        line-height: 100px;
+    }
+}
+
+
+
+/*RESPONSIVIDADE PARA TELAS MENORES: */
 
 @media screen and (max-width: 1000px){
     #projects{
@@ -274,11 +660,7 @@ body{
         font-size: 15pt;
     }
 
-    #header-title{
-        margin: 30px;
-    }
-
-    #logo{
+    #header-title, #logo{
         margin: 30px;
     }
 
@@ -330,12 +712,11 @@ body{
         margin-top: 40px;
     }
 
-    #header-title{
+    #header-title, #logo{
         margin: 20px;
     }
 
     #logo{
-        margin: 20px;
         width: 55px;
     }
 
