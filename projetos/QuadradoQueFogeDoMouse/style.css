@@ -1,0 +1,79 @@
+body{
+    background-color: #444;
+}
+
+#quadro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#link-voltar{
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    z-index: 1;
+}
+
+#voltar-btn{
+    width: 46px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #242424;
+    transition: 0.18s;
+}
+
+@media screen and (min-width: 1750px){
+    #voltar-btn{
+        width: 58px;
+    }
+    
+    #link-voltar{
+        right: 28px;
+    }
+}
+
+@media screen and (min-width: 2500px){
+    #voltar-btn{
+        width: 80px;
+    }
+    
+    #link-voltar{
+        bottom: 20px;
+        right: 35px;
+    }
+}
+
+@media screen and (min-width: 3300px){    
+    #voltar-btn{
+        width: 118px;
+    }
+    
+    #link-voltar{
+        bottom: 30px;
+        right: 45px;
+    }
+}
+
+@media screen and (min-width: 4800px){  
+    #voltar-btn{
+        width: 160px;
+    }
+    
+    #link-voltar{
+        bottom: 38px;
+        right: 55px;
+    }
+}
+
+@media screen and (max-width: 643px){        
+    #voltar-btn{
+        width: 38px;
+    }
+    
+    #link-voltar{
+        bottom: 12px;
+        right: 22px;
+    }
+}
