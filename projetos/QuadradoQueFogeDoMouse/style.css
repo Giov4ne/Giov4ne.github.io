@@ -24,6 +24,10 @@ body{
     transition: 0.18s;
 }
 
+#voltar-btn:hover{
+    filter: saturate(250%);
+}
+
 @media screen and (min-width: 1750px){
     #voltar-btn{
         width: 58px;
