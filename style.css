@@ -37,7 +37,7 @@ body{
 
 #cabecalho2 > #header-title{
     color: #111;
-    text-shadow: 0 0 1.5px #222;
+    text-shadow: 0 0 1px #222;
 }
 
 #logo{
@@ -679,6 +679,10 @@ body{
 
     #header-title, #logo{
         margin: 30px;
+    }
+
+    #cabecalho2 > #header-title{
+        text-shadow: 0 0 0;
     }
 
     #personal-card{
