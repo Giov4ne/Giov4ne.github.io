@@ -59,7 +59,7 @@ window.onload = ()=>{
                 canvas.height = 300;
                 tamBloco = 12;
                 qtdBlocos = 25;
-                setInterval(jogo, 80);
+                setInterval(jogo, 100);
             }
         }
         redimensionaTela();
