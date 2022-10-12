@@ -269,18 +269,18 @@ body{
 
 @media screen and (max-width: 499px){
     #engloba-direcoes{
-        width: 114px;
-        bottom: 13%;
+        width: 165px;
+        bottom: 7%;
     }
 
     .direcoes{
-        width: 38px;
+        width: 55px;
     }
     
     #inicio, #fim, #campo{
         width: 300px;
         height: 300px;
-        transform: translate(-50%,-72%);
+        transform: translate(-50%,-78%);
     }
 
     #fim{
@@ -288,7 +288,7 @@ body{
     }
 
     #tela{
-        transform: translate(-50%, -72%);
+        transform: translate(-50%, -78%);
     }
 
     #titulo, #titulo-fim{
