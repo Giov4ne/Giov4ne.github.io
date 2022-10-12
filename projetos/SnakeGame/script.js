@@ -10,6 +10,10 @@ window.onload = ()=>{
     </div>
     `;
     const botao = document.querySelector('#botao');
+    const cima = document.querySelector('.direcoes[alt="cima"]');
+    const direita = document.querySelector('.direcoes[alt="direita"]');
+    const baixo = document.querySelector('.direcoes[alt="baixo"]');
+    const esquerda = document.querySelector('.direcoes[alt="esquerda"]');
 
     botao.onmousedown = ()=>{
 
@@ -167,6 +171,35 @@ window.onload = ()=>{
                     }
                     break;
             }
-        }     
+        }
+
+        cima.onmousedown = ()=>{
+            if(velY !== velocidade){
+                velX = 0;
+                velY = -velocidade;
+            }
+        }
+
+        direita.onmousedown = ()=>{
+            if(velX !== -velocidade){
+                velX = velocidade;
+                velY = 0;
+            }
+        }
+
+        baixo.onmousedown = ()=>{
+            if(velY !== -velocidade){
+                velX = 0;
+                velY = velocidade;
+            }
+        }
+
+        esquerda.onmousedown = ()=>{
+            if(velX !== velocidade){
+                velX = -velocidade;
+                velY = 0;
+            }
+        }
+        
     }
 }
