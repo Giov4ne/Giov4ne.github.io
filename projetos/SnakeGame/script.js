@@ -14,20 +14,53 @@ window.onload = ()=>{
     botao.onmousedown = ()=>{
 
         document.addEventListener('keydown', andar);
-        setInterval(jogo, 60);
         
         let velocidade = 1;
         let velX = 0;
         let velY = 0;
         let pontoX = 10;
         let pontoY = 12;
-        let tamBloco = 15;
-        let qtdBlocos = 40;
+        let tamBloco = 20;
+        let qtdBlocos = 30;
         let macaX = 20;
         let macaY = 20;
         let rastro = [];
         let cauda = 5;
         let pontuacao = 0;
+        let tamTela;
+
+        function redimensionaTela(){
+            tamTela = window.innerWidth;
+            if(tamTela >= 660){
+                tela.classList.remove('d3');
+                tela.classList.remove('d2');
+                tela.classList.add('d1');
+                canvas.width = 600;
+                canvas.height = 600;
+                tamBloco = 20;
+                setInterval(jogo, 60);
+            } else if(tamTela >= 500){
+                tela.classList.remove('d3');
+                tela.classList.remove('d1');
+                tela.classList.add('d2');
+                canvas.width = 450;
+                canvas.height = 450;
+                tamBloco = 15;
+                setInterval(jogo, 70);
+            } else{
+                tela.classList.remove('d2');
+                tela.classList.remove('d1');
+                tela.classList.add('d3');
+                canvas.width = 300;
+                canvas.height = 300;
+                tamBloco = 12;
+                qtdBlocos = 25;
+                setInterval(jogo, 80);
+            }
+        }
+        redimensionaTela();
+        window.addEventListener('resize', redimensionaTela);
+        
 
         tela.innerHTML = `<p id="pontuacao">Score: ${pontuacao}</p>`;
 

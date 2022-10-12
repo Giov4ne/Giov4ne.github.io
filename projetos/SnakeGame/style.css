@@ -19,12 +19,25 @@ body{
 }
 
 #tela{
-    width: 600px;
-    height: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.d1{
+    width: 600px;
+    height: 600px;
+}
+
+.d2{
+    width: 450px;
+    height: 450px;
+}
+
+.d3{
+    width: 300px;
+    height: 300px;
 }
 
 #inicio, #fim{
@@ -94,7 +107,7 @@ body{
     font-family: 'Mouse Memoirs', sans-serif;
     margin: 7px;
     text-align: center;
-    font-size: 20pt;
+    font-size: 26pt;
     letter-spacing: 2px;
     color: #fff;
     text-shadow: 1px 1px 5px #000;
@@ -170,5 +183,75 @@ body{
     #link-voltar{
         bottom: 12px;
         right: 22px;
+    }
+}
+
+@media screen and (max-width: 659px){
+    #inicio, #fim{
+        width: 450px;
+        height: 450px;
+    }
+
+    #titulo, #titulo-fim{
+        font-size: 40pt;
+        margin: 15px;
+    }
+
+    #botao, #botao-fim{
+        font-size: 15pt;
+        margin-top: 15px;
+        width: 100px;
+    }
+
+    #cobraimg{
+        margin-top: 45px;
+        margin-bottom: 10px;
+        width: 230px;
+        height: 230px;
+    }
+
+    #pontuacao{
+        font-size: 20pt;
+    }
+
+    #cobraimg-fim{
+        margin-top: 60px;
+        width: 155px;
+        height: 155px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    #inicio, #fim{
+        width: 300px;
+        height: 300px;
+    }
+
+    #titulo, #titulo-fim{
+        font-size: 32pt;
+        margin: 8px;
+    }
+
+    #botao, #botao-fim{
+        font-size: 12pt;
+        margin-top: 10px;
+        width: 80px;
+    }
+
+    #cobraimg{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 160px;
+        height: 160px;
+    }
+
+    #pontuacao{
+        font-size: 15pt;
+    }
+
+    #cobraimg-fim{
+        margin-top: 30px;
+        width: 100px;
+        height: 100px;
     }
 }
