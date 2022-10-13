@@ -24,8 +24,8 @@ window.onload = ()=>{
                 canvas.width = 800;
                 canvas.height = 600;
             } else{
-                canvas.width = window.innerWidth - 90;
-                canvas.height = window.innerHeight - 80;
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
             }
         }
         resizeWindow();

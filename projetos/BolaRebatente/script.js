@@ -7,8 +7,8 @@ window.onload = ()=>{
             canvas.width = 800;
             canvas.height = 600;
         } else{
-            canvas.width = window.innerWidth - 100;
-            canvas.height = window.innerHeight - 100;
+            canvas.width = window.innerWidth - 40;
+            canvas.height = window.innerHeight - 150;
         }
     } 
     resizeWindow();
