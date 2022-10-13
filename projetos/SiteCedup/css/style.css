@@ -178,15 +178,15 @@ header{
     margin-bottom: 40px;
 }
 
-.banner-home{
-    width: 100%;
-    height: 54vh;
-}
-
-.banner{
+.banner, .banner-home{
     width: 100%;
     max-width: 1800px;
     height: 100%;
+    min-height: 200px;
+}
+
+.banner-home{
+    width: calc(100vw - 144px);
 }
 
 footer{
@@ -219,7 +219,7 @@ footer{
 .titulo-info{
     color: #fff;
     text-shadow: 1px 1px 3px #00446e;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 .infoList{
@@ -304,7 +304,7 @@ footer{
     height: auto;
     padding: 16px;
     border-radius: 10px 10px 0px 0px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .titulo-sessao2{
@@ -385,6 +385,9 @@ iframe{
 
 .recuperarContas{
     padding: 2px 2px 25px 2px;
+    text-align: center;
+    margin: 0 4px;
+    font-size: 1rem;
 }
 
 .contatos{
@@ -397,7 +400,7 @@ iframe{
 
 .contato{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: #00446e;
     padding: 10px;
     border-radius: 5px 5px 5px 5px;
@@ -406,7 +409,7 @@ iframe{
 
 .secretaria{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: #00446e;
     padding: 10px;
     border-radius: 5px 5px 5px 5px;
@@ -442,7 +445,7 @@ iframe{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: clamp(180px, 80%, 1200px);
+    width: clamp(410px, 80%, 1200px);
     border-radius: 10px;
     background-color: #3697cf;
     box-shadow: 0 0 10px 6px #06283da4;
@@ -809,7 +812,7 @@ iframe{
 
     .docs3{
         width: 90%;
-        height: 480px;
+        height: 55vw;
         margin: 30px 30px 50px 30px;
     }
 }
@@ -860,7 +863,7 @@ iframe{
 
     .contentimg{
         width: 80%;
-        margin: 20px 20px 50px 20px;
+        margin: 20px;
     }
     
 }
@@ -909,6 +912,18 @@ iframe{
         width: 80%;
         min-width: 220px;
     }
+
+    #conteudo{
+        padding: 20px;
+    }
+
+    .docs2{
+        height: 50vw;
+    }
+
+    .contentlinks3{
+        padding: 0px 20px 20px 20px;
+    }
 }
 
 @media screen and (max-width: 645px){
@@ -944,6 +959,10 @@ iframe{
         width: 200px;
     }
 
+    .docs{
+        height: 50vw;
+        margin: 20px 20px 30px 20px;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -963,6 +982,25 @@ iframe{
         display: flex;
     }
 
+    .banner-home{
+        width: 100%;
+    }
+
+    .titulo-sessao{
+        background-color: #0c3b58;
+        /* background-color: #044066; */
+        padding: 8px 10px;
+        font-size: 1.3rem;
+    }
+
+    .titulo-info{
+        font-size: 1.4rem;
+    }
+
+    .contentimg, iframe{
+        border: solid 4px #0c3b58;
+    }
+
     header, #conteudo, #info, footer{
         margin-left: 0;
     }
@@ -975,7 +1013,11 @@ iframe{
     }
 
     #conteudo{
-        padding-top: 72px;
+        padding: 72px 5px 8px 5px;
+    }
+
+    .banner, .banner-home{
+        min-height: 140px;
     }
 
     :root{
@@ -1000,6 +1042,10 @@ iframe{
     .icones-barra{
         width: 26px;
         height: 26px;
+    }
+
+    #engloba-details{
+        width: clamp(200px, 95%, 1200px);
     }
 }
 
@@ -1048,6 +1094,23 @@ iframe{
         width: 30px;
         left: 232px;
         padding: 3px;
+    }
+
+    .titulo-sessao{
+        padding: 8px;
+        font-size: 1.1rem;
+    }
+
+    .titulo-sessao2{
+        font-size: 1.05rem;
+    }
+
+    .titulo-sessao3{
+        font-size: 1rem;
+    }
+
+    .texto-sessao, .texto-sessao2, .texto-sessao3{
+        font-size: 1rem;
     }
 }
 
