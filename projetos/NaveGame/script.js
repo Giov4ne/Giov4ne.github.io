@@ -19,6 +19,18 @@ window.onload = ()=>{
         const meteorImg = new Image();
         meteorImg.src = './img/meteor.png';
 
+        function resizeWindow(){
+            if(window.innerWidth >= 850){                
+                canvas.width = 800;
+                canvas.height = 600;
+            } else{
+                canvas.width = window.innerWidth - 90;
+                canvas.height = window.innerHeight - 80;
+            }
+        }
+        resizeWindow();
+        window.addEventListener('resize', resizeWindow);
+
         let naveX = canvas.width/2 - 35;
         let naveY = canvas.height - 80;
         let naveSize = 70;

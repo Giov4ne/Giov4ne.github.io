@@ -156,6 +156,28 @@ body{
     }
 }
 
+@media screen and (max-width: 849px){
+    #info{
+        width: calc(100% - 90px);
+        height: calc(100% - 80px);
+    }
+
+    #title, #title2{
+        font-size: 48pt;
+        margin-top: 26px;
+        margin-bottom: 32px;
+    }
+
+    #start, #restart{
+        font-size: 15pt;
+        width: 80px;
+    }
+    
+    #restart{
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 643px){        
     #voltar-btn{
         width: 38px;

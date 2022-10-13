@@ -23,5 +23,17 @@ window.onload = ()=>{
             draw();
         }
     }
+    
+    function resizeWindow(){
+        if(window.innerWidth >= 680){
+            canvas.width = canvas.height = 600;
+        } else{
+            canvas.width = window.innerWidth - 60;
+            canvas.height = window.innerHeight - 130;
+        }
+        draw();
+    }
+    resizeWindow();
+    window.addEventListener('resize', resizeWindow);
 
 }
