@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+/* font-family: 'Manrope', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e8eeff;
+    font-family: 'Manrope', sans-serif;
+    background: url(../imagens/fundotijolo.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+:root{
+    font-size: 14pt;
+}
+
+::selection{
+    background-color: #2c37ad;
+    color: #ffffff;
+}
+
+header{
+    background-color: #06283D;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    color: #fff;
+}
+
+#menu-icon{
+    position: fixed;
+    top: 13px;
+    z-index: 3;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.menu-icon-off{
+    left: 10px;
+    width: 30px;
+}
+
+.menu-icon-on{
+    left: 260px;
+    width: 34px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #3697cf;
+    box-shadow: 0 0 1000px 1000px #00000077;
+}
+
+#menu-icon:hover{
+    cursor: pointer;
+}
+
+#instituicao{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5px 20px;
+}
+
+#logoCedup{
+    margin: 5px;
+    margin-bottom: 30px;
+    width: 64px;
+    height: 64px;
+}
+
+#barra-lateral{
+    background: #06283D;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: all 0.4s ease;
+}
+
+#barra-lateral::-webkit-scrollbar{
+    display: none;
+}
+
+.barra-lateral-off{
+    width: 90px;
+}
+
+.barra-lateral-on{
+    width: 300px;
+}
+
+.asideList, .asideList2{
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 15px;
+    transition: all 0.25s;
+}
+
+.asideList:hover{
+    padding-left: 14px;
+    background-color: #1c70ee;
+    cursor: pointer;
+}
+
+.asideList:hover > .links{
+    color: #fff;
+}
+
+.asideList:active{
+    transition: all 0s;
+    background-color: #01578d;
+}
+
+.englobaLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.icones-barra{
+    width: 30px;
+    height: 30px;
+}
+
+#barra-pesquisa{
+    background-color: #fff;
+    color: #21297A;
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 28px;
+    padding: 0 4px 0 8px;
+    font-size: 0.8rem;
+}
+
+#barra-pesquisa::placeholder{
+    color: #21297A;
+}
+
+#barra-pesquisa:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    margin-left: 90px;
+}
+
+#carouselExampleIndicators, .banner{
+    margin-bottom: 40px;
+}
+
+.banner-home{
+    width: 100%;
+    height: 54vh;
+}
+
+.banner{
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+}
+
+footer{
+    color: #ffffff;
+    background-color: #00446e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    margin-left: 90px;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #3697cf;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+#cursostec, #emiep, #escolaInfo{
+    margin: 30px;
+}
+
+.titulo-info{
+    color: #fff;
+    text-shadow: 1px 1px 3px #00446e;
+    font-size: 1.9rem;
+}
+
+.infoList{
+    padding: 0;
+}
+
+.cursos{
+    list-style: none;
+    color: #fff;
+    background-color: #00446e;
+    padding: 6px 13px 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 0;
+}
+
+.cursos > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cursos > a:hover{
+    color: #f1e319;
+}
+
+.itns-laterais{
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.itens-laterais-off{
+    display: none;
+}
+
+.itens-laterais-on{
+    min-width: 160px;
+    display: inline;
+    font-size: 0.85rem;
+}
+
+.docs{
+    height: 313px;
+}
+
+.docs2{
+    height: 600px;
+    width: 860px;
+}
+
+.docs3{
+    height: 600px;
+    width: 1070px;
+}
+
+.sessao, .sessao2, .sessao3, .sessao4{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3697cf;
+    color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px 6px #06283da4;
+    margin: 40px;
+}
+
+.sessao2{
+    width: 1000px;
+}
+
+.sessao3{
+    width: 600px;
+}
+
+.sessao4{
+    width: 1150px;
+}
+
+.titulo-sessao{
+    text-align: center;
+    background-color: #06283D;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5rem;
+}
+
+.titulo-sessao2{
+    text-align: center;
+    font-size: 1.35rem;
+    padding: 15px 20px 5px 20px;
+}
+
+.titulo-sessao3{
+    text-align: center;
+    background-color: #1c70ee;
+    width: 100%;
+    padding: 6px;
+    font-size: 1.2rem;
+}
+
+.titulo-sessao.no-margin-titulo{
+    margin-bottom: 0;
+}
+
+.texto-sessao, .texto-sessao2, .texto-sessao3{
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.texto-sessao2{
+    padding: 20px 20px 0px 20px;
+    margin: 0;
+}
+
+.texto-sessao3{
+    text-align: start;
+    padding-left: 0;
+}
+
+.contentlinks, .contentlinks2, .contentlinks3{
+    color: #06283D;
+    text-decoration: none;
+}
+
+.contentlinks2{
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+}
+
+.contentlinks3{
+    text-align: center;
+    padding: 5px 20px 30px 20px;
+}
+
+.contentlinks:hover, .contentlinks2:hover, .contentlinks3:hover{
+    color: #f1e319;
+    text-decoration: none;
+}
+
+.contentimg, iframe{
+    width: 600px;
+    margin: 50px;
+    border: solid 5px #06283D;
+    border-radius: 4px;
+}
+
+iframe{
+    background-color: #fff;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.localizacao{
+    border-color: #00446e;
+    width: 300px;
+}
+
+.recuperarContas{
+    padding: 2px 2px 25px 2px;
+}
+
+.contatos{
+    background-color: #06283D;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.contato{
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #00446e;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+}
+
+.secretaria{
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #00446e;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#escolaInfo{
+    background-color: #06283D;
+    width: 400px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0;
+}
+
+#escola{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.borda-sessao{
+    border: 4px solid #1c70ee;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.borda-sessao > p{
+    padding-left: 10px;
+}
+
+#engloba-details{
+    padding: 0 0 14px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(180px, 80%, 1200px);
+    border-radius: 10px;
+    background-color: #3697cf;
+    box-shadow: 0 0 10px 6px #06283da4;
+    color: #fff;
+    margin: 40px;
+}
+
+.detail{
+    width: 88%;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+    outline: none;
+}
+
+.detail[open]{
+    background-color: #1c70ee;
+}
+
+.detail[open] > .sumario{
+    border-radius: 10px 10px 0 0;
+}
+
+.sumario{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #00446e;
+    border: 1px solid #06283da4;
+}
+
+.details-content > .texto-sessao{
+    text-align: justify;
+}
+
+#img-app{
+    padding: 10px 0 20px 0;
+}
+
+.nav2-links{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 500;
+    background-color: #1c70ee;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.nav2-links:hover{
+    color: #f1e319;
+}
+
+.engloba-nav2{
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+.content-nav2{
+    border: solid 5px #1c70ee;
+    background-color: #00446e;
+    border-radius: 50px;
+}
+
+.quebrar-palavra{
+    word-break: break-all;
+}
+
+
+/* RESPONSIVIDADE PARA TELAS MAIORES:  */
+
+@media screen and (min-width: 1750px){
+    :root{
+        font-size: 18pt;
+    }
+
+    header{
+        margin-left: 105px;
+        min-height: 90px;
+    }
+
+    #logoCedup{
+        margin: 6px;
+        margin-bottom: 35px;
+        width: 85px;
+        height: 85px;
+    }
+        
+    .barra-lateral-off{
+        width: 105px;
+    }
+    
+    .barra-lateral-on{
+        width: 390px;
+    }
+
+    .icones-barra{
+        width: 40px;
+        height: 40px;
+    }
+
+    #barra-pesquisa{
+        border-radius: 10px;
+        height: 34px;
+        padding: 0 6px 0 10px;
+    }
+
+    .itns-laterais{
+        margin-left: 11px;
+    }
+
+    .asideList, .asideList2{
+        margin-bottom: 12px;
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    .asideList:hover{
+        padding-left: 17px;
+    }
+    
+    #conteudo{
+        padding: 20px;
+        margin-left: 115px;
+    }
+
+    .sessao, .sessao2, .sessao3, .sessao4{
+        width: 1050px;
+        border-radius: 12px 12px 12px 12px; 
+        box-shadow: 0 0 14px 9px #06283da4;
+        margin: 60px;
+    }
+
+    .sessao2{
+        width: 1250px;
+    }
+
+    .sessao3{
+        width: 850px;
+    }
+
+    .sessao4{
+        width: 1400px;
+    }
+    
+    .docs{
+        height: 400px;
+        width: 750px; 
+    }
+
+    .docs2{
+        height: 687px;
+        width: 1100px;
+    }
+
+    .docs3{
+        height: 687px;
+        width: 1300px;
+    }
+
+    .titulo-sessao{
+        padding: 20px;
+        border-radius: 12px 12px 0px 0px;
+    }
+    
+    .texto-sessao, .texto-sessao2, .texto-sessao3{
+        padding: 20px 30px 20px 30px;
+    }
+
+    .borda-sessao > p{
+        padding-left: 30px;
+    }
+
+    .contentlinks2{
+        padding: 15px 25px 25px 15px;
+    }
+
+    .content-nav2{
+        border-radius: 50px;
+    }
+
+    .nav2-links{
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 10px 14px;
+    }
+
+    footer{
+        padding: 0 10px;
+        margin-left: 105px;
+    }
+    
+    #info{
+        padding: 10px;
+        margin-left: 105px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 2500px){ 
+    
+    /* EM ANDAMENTO */
+    
+    :root{
+        font-size: 28pt;
+    }
+
+    header{
+        margin-left: 170px;
+        min-height: 140px;
+    }
+
+    #logoCedup{
+        margin: 10px;
+        margin-bottom: 50px;
+        width: 133px;
+        height: 133px;
+    }
+        
+    .barra-lateral-off{
+        width: 170px;
+    }
+    
+    .barra-lateral-on{
+        width: 570px;
+    }
+
+    .icones-barra{
+        width: 60px;
+        height: 60px;
+    }
+
+    #barra-pesquisa{
+        border-radius: 14px;
+        height: 50px;
+        padding: 0 8px 0 12px;
+    }
+
+    .itns-laterais{
+        margin-left: 15px;
+        min-width: 245px;
+    }
+
+    .asideList, .asideList2{
+        margin-bottom: 18px;
+        padding: 14px;
+        border-radius: 24px;
+    }
+
+    .asideList:hover{
+        padding-left: 22px;
+    }
+    
+    #conteudo{
+        padding: 40px;
+        margin-left: 170px;
+    }
+
+    .sessao, .sessao2, .sessao3, .sessao4{
+        width: 1550px;
+        border-radius: 22px 22px 22px 22px; 
+        box-shadow: 0 0 18px 13px #06283da4;
+        margin: 100px;
+    }
+
+    .sessao2{
+        width: 1250px;
+    }
+
+    .sessao3{
+        width: 850px;
+    }
+
+    .sessao4{
+        width: 1400px;
+    }
+    
+    .docs{
+        height: 650px;
+        width: 1100px; 
+    }
+
+    .docs2{
+        height: 687px;
+        width: 1100px;
+    }
+
+    .docs3{
+        height: 687px;
+        width: 1300px;
+    }
+
+    .titulo-sessao{
+        padding: 30px;
+        border-radius: 22px 22px 0px 0px;
+    }
+    
+    .texto-sessao, .texto-sessao2, .texto-sessao3{
+        padding: 30px 40px 30px 40px;
+    }
+
+    .borda-sessao > p{
+        padding-left: 30px;
+    }
+
+    .contentlinks2{
+        padding: 15px 25px 25px 15px;
+    }
+
+    .content-nav2{
+        border-radius: 50px;
+    }
+
+    .nav2-links{
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 10px 14px;
+    }
+
+    footer{
+        padding: 0 10px;
+        margin-left: 170px;
+    }
+    
+    #info{
+        padding: 10px;
+        margin-left: 170px;
+        margin-top: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 3300px){
+    :root{
+        font-size: 40pt;
+    }
+}
+
+@media screen and (min-width: 4800px){
+    :root{
+        font-size: 54pt;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE PARA TELAS MENORES:  */
+
+@media screen and (max-width: 1305px){
+    .sessao4{
+        width: 96%;
+        min-width: 220px;
+    }
+
+    .docs3{
+        width: 90%;
+        height: 480px;
+        margin: 30px 30px 50px 30px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .sessao2{
+        width: 96%;
+        min-width: 220px;
+    }
+
+    .docs2{
+        width: 88%;
+        margin: 20px 20px 50px 20px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .sessao{
+        width: 90%;
+        min-width: 220px;
+    }
+
+    .sessao.content-nav2 .nav2-links{
+        margin: 20px 25px;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .sessao.content-nav2 .engloba-nav2{
+        width: 90%;
+        flex-direction: column;
+        min-width: 200px;
+        padding-left: 0;
+    }
+    
+    .sessao.content-nav2{
+        width: 80%;
+        min-width: 220px;
+    }
+
+    .docs{
+        width: 80%;
+        margin: 20px 20px 50px 20px;
+        height: 290px;
+    }
+
+    .contentimg{
+        width: 80%;
+        margin: 20px 20px 50px 20px;
+    }
+    
+}
+
+@media screen and (max-width: 945px){
+    #esconder-title{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px){
+    :root{
+        font-size: 13pt;
+    }
+
+    header{
+        min-height: 62px;
+    }
+
+    .icones-barra{
+        width: 28px;
+        height: 28px;
+    }
+
+    #logoCedup{
+        margin-bottom: 28px;
+        width: 62px;
+        height: 62px;
+    }
+
+    .nav2-links{
+        margin: 20px 25px;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .engloba-nav2{
+        width: 90%;
+        flex-direction: column;
+        min-width: 200px;
+        padding-left: 0;
+    }
+    
+    .content-nav2{
+        width: 80%;
+        min-width: 220px;
+    }
+}
+
+@media screen and (max-width: 645px){
+    #esconder-title-2, #esconder-title-4{
+        display: none;
+    }
+
+    .contatos{
+        width: 300px;
+        padding: 25px;
+    }
+    
+    .contato{
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .secretaria{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #escola{
+        margin: 0px 0px 0px 0px;
+    }
+
+    #escolaInfo{
+        width: 300px;
+    }
+
+    .localizacao{
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .barra-lateral-off{
+        width: 0;
+    }
+
+    .barra-lateral-on{
+        width: 250px;
+    }
+
+    #instituicao{
+        margin-left: 55px;
+    }
+
+    #menu-icon{
+        display: flex;
+    }
+
+    header, #conteudo, #info, footer{
+        margin-left: 0;
+    }
+
+    header{
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        min-height: 55px;
+    }
+
+    #conteudo{
+        padding-top: 72px;
+    }
+
+    :root{
+        font-size: 11pt;
+    }
+    
+    #logoCedup{
+        margin-bottom: 28px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .asideList:hover{
+        padding: 8px;
+    }
+
+    #barra-pesquisa{
+        height: 24px;
+        padding-left: 6px;
+    }
+
+    .icones-barra{
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #escolaInfo{
+        width: 90%;
+        height: 280px;
+    }
+    
+    .localizacao{
+        margin: 50px 10px;
+        width: 75%;
+    }
+    
+    .contato{
+        padding: 10px 8px 8px 8px;
+    }
+}
+
+@media screen and (max-width: 435px){
+    #esconder-title-2{
+        display: inline;
+    }
+
+    #esconder-title-3{
+        display: none;
+    }
+
+    .barra-lateral-on{
+        width: 218px;
+    }
+
+    .itens-laterais-on{
+        min-width: 97px;
+    }
+
+    #menu-icon{
+        top: 15px;
+    }
+
+    .menu-icon-off{
+        width: 26px;
+    }
+
+    .menu-icon-on{
+        width: 30px;
+        left: 232px;
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .menu-icon-on{
+        left: 185px;
+    }
+    
+    .barra-lateral-on{
+        width: 176px;
+    }
+
+    #barra-pesquisa{
+        max-width: 115px;
+    }
+}
