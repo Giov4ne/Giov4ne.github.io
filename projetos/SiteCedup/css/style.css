@@ -161,7 +161,7 @@ header{
 }
 
 #barra-pesquisa:focus{
-    box-shadow: 0 0 0 0;
+    box-shadow: 0;
     outline: 0;
 }
 
@@ -179,9 +179,8 @@ header{
 
 .banner, .banner-home{
     width: 100%;
-    max-width: 1800px;
     height: 100%;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .banner-home{
@@ -230,7 +229,7 @@ footer{
     color: #fff;
     background-color: #00446e;
     padding: 6px 13px 8px 10px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     margin: 5px 0;
 }
 
@@ -279,7 +278,7 @@ footer{
     align-items: center;
     background-color: #3697cf;
     color: #fff;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     box-shadow: 0 0 10px 6px #06283da4;
     margin: 40px;
 }
@@ -325,7 +324,7 @@ footer{
 }
 
 .texto-sessao, .texto-sessao2, .texto-sessao3{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     text-align: left;
     font-size: 1.1rem;
 }
@@ -394,7 +393,7 @@ iframe{
     width: 400px;
     padding: 30px;
     text-align: center;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .contato{
@@ -402,7 +401,7 @@ iframe{
     font-size: 1.3rem;
     background-color: #00446e;
     padding: 10px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     margin: 10px;
 }
 
@@ -411,13 +410,13 @@ iframe{
     font-size: 1.3rem;
     background-color: #00446e;
     padding: 10px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
 }
 
 #escolaInfo{
     background-color: #06283D;
     width: 400px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     margin-top: 0;
 }
 
@@ -454,7 +453,7 @@ iframe{
 
 .detail{
     width: 88%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     margin: 20px;
     outline: none;
 }
@@ -573,9 +572,13 @@ iframe{
         margin-left: 115px;
     }
 
+    .banner-home{
+        width: calc(100vw - 180px);
+    }
+
     .sessao, .sessao2, .sessao3, .sessao4{
         width: 1050px;
-        border-radius: 12px 12px 12px 12px; 
+        border-radius: 12px; 
         box-shadow: 0 0 14px 9px #06283da4;
         margin: 60px;
     }
@@ -621,7 +624,7 @@ iframe{
     }
     
     .texto-sessao, .texto-sessao2, .texto-sessao3{
-        padding: 20px 30px 20px 30px;
+        padding: 20px 30px;
     }
 
     .borda-sessao > p{
@@ -652,10 +655,6 @@ iframe{
     #info{
         padding: 20px;
         margin-left: 115px;
-    }
-
-    .banner, .banner-home{
-        max-width: 100%;
     }
 
     #escolaInfo{
@@ -747,9 +746,13 @@ iframe{
         margin-left: 170px;
     }
 
+    .banner-home{
+        width: calc(100vw - 270px);
+    }
+
     .sessao, .sessao2, .sessao3, .sessao4{
         width: 1550px;
-        border-radius: 22px 22px 22px 22px; 
+        border-radius: 22px; 
         box-shadow: 0 0 18px 13px #06283da4;
         margin: 100px;
     }
@@ -795,7 +798,7 @@ iframe{
     }
     
     .texto-sessao, .texto-sessao2, .texto-sessao3{
-        padding: 30px 40px 30px 40px;
+        padding: 30px 40px;
     }
 
     .borda-sessao > p{
@@ -827,10 +830,6 @@ iframe{
         padding: 40px;
         margin-left: 170px;
         margin-top: 80px;
-    }
-
-    .banner, .banner-home{
-        max-width: 2450px;
     }
 
     #engloba-details{
@@ -927,9 +926,13 @@ iframe{
         margin-left: 255px;
     }
 
+    .banner-home{
+        width: calc(100vw - 410px);
+    }
+
     .sessao, .sessao2, .sessao3, .sessao4{ 
         width: 2300px;
-        border-radius: 35px 35px 35px 35px; 
+        border-radius: 35px; 
         box-shadow: 0 0 24px 18px #06283da4;
         margin: 150px;
     }
@@ -975,7 +978,7 @@ iframe{
     }
     
     .texto-sessao, .texto-sessao2, .texto-sessao3{
-        padding: 50px 60px 50px 60px;
+        padding: 50px 60px;
     }
 
     .borda-sessao > p{
@@ -1008,10 +1011,6 @@ iframe{
         padding: 70px;
         margin-left: 255px;
         margin-top: 140px;
-    }
-
-    .banner, .banner-home{
-        max-width: 3650px;
     }
 
     #engloba-details{
@@ -1105,9 +1104,13 @@ iframe{
         margin-left: 340px;
     }
 
+    .banner-home{
+        width: calc(100vw - 550px);
+    }
+
     .sessao, .sessao2, .sessao3, .sessao4{ 
         width: 3060px;
-        border-radius: 45px 45px 45px 45px; 
+        border-radius: 45px; 
         box-shadow: 0 0 32px 25px #06283da4;
         margin: 200px;
     }
@@ -1153,7 +1156,7 @@ iframe{
     }
     
     .texto-sessao, .texto-sessao2, .texto-sessao3{ 
-        padding: 75px 85px 75px 85px;
+        padding: 75px 85px;
     }
 
     .borda-sessao > p{ 
@@ -1186,10 +1189,6 @@ iframe{
         padding: 100px;
         margin-left: 340px;
         margin-top: 200px;
-    }
-
-    .banner, .banner-home{ 
-        max-width: 4850px;
     }
 
     #engloba-details{ 
@@ -1433,11 +1432,11 @@ iframe{
     }
 
     #conteudo{
-        padding: 95px 5px 8px 5px;
+        padding: 95px 0px 8px 0px;
     }
 
     .banner, .banner-home{
-        min-height: 140px;
+        min-height: 120px;
     }
 
     :root{
@@ -1522,6 +1521,10 @@ iframe{
         padding: 3px;
     }
 
+    .sessao, .sessao2, .sessao3, .sessao4{
+        margin: 30px;
+    }
+
     .titulo-sessao{
         padding: 8px;
         font-size: 1.1rem;
@@ -1559,6 +1562,10 @@ iframe{
         padding: 12px;
     }
 
+    .banner, .banner-home{
+        min-height: 110px;
+    }
+
 }
 
 @media screen and (max-width: 300px){
@@ -1581,6 +1588,10 @@ iframe{
     .contato, .secretaria{
         padding: 8px;
         font-size: 0.7rem;
+    }
+
+    .banner, .banner-home{
+        min-height: 100px;
     }
 }
 
