@@ -247,21 +247,6 @@ body{
     transition: 0.28s;
 }
 
-.creditos{
-    padding: 28px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.p-creditos, .a-creditos{
-    color: #e9e9e9;
-    text-shadow: 0 0 3px #000;
-    font-size: 1rem;
-    text-decoration: none;
-    line-height: 30px;
-}
-
 .quebrar-palavra{
     word-break: break-all;
 }
@@ -350,14 +335,6 @@ body{
     .title-section2{
         padding: 25px;
     }
-
-    .creditos{
-        padding: 40px;
-    }
-
-    .p-creditos{
-        line-height: 40px;
-    }
 }
 
 @media screen and (min-width: 2500px){
@@ -444,14 +421,6 @@ body{
     .title-section2{
         padding: 33px;
     }
-
-    .creditos{
-        padding: 50px;
-    }
-
-    .p-creditos{
-        line-height: 52px;
-    }
 }
 
 @media screen and (min-width: 3300px){
@@ -536,14 +505,6 @@ body{
     
     .title-section2{
         padding: 45px;
-    }
-
-    .creditos{
-        padding: 70px;
-    }
-
-    .p-creditos{
-        line-height: 73px;
     }
 }
 
@@ -630,14 +591,6 @@ body{
     .title-section2{
         padding: 60px;
     }
-
-    .creditos{
-        padding: 98px;
-    }
-
-    .p-creditos{
-        line-height: 100px;
-    }
 }
 
 
@@ -665,10 +618,6 @@ body{
     
     .project-text{
         padding: 30px 30px 40px 30px;
-    }
-
-    .creditos{
-        padding: 20px;
     }
 }
 
@@ -704,10 +653,6 @@ body{
 
     .link-project{
         width: 172px;
-    }
-
-    .creditos{
-        padding: 15px;
     }
 }
 
@@ -761,10 +706,6 @@ body{
 
     .link-project{
         width: 150px;
-    }
-
-    .creditos{
-        padding: 10px;
     }
 }
 
