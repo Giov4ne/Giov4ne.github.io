@@ -665,6 +665,7 @@ body{
         width: 310px;
         min-width: 310px;
         height: 390px;
+        margin: 12px 0 20px 0;
     }
 
     #conteudo-card{
