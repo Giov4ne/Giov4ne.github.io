@@ -241,23 +241,75 @@ td[colspan="2"]{
     font-size: 1.2rem;
 }
 
-/* #message{
-    background-color: #bfffdae0;
-    padding: 3px 10px;
-    border: 2.5px solid #00b900c2;
-    border-radius: 4px;
-    box-shadow: 0 0 14px #000000;
+#link-voltar{
+    border-radius: 50%;
     position: fixed;
-    bottom: 18px;
-    right: 12px;
-    font-size: 0.9rem;
-    text-shadow: 0.8px 0.8px 2px #0000007c;
+    bottom: 15px;
+    right: 25px;
+    z-index: 1;
 }
 
-.msg-off{
-    display: none;
+#voltar-btn{
+    width: 46px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #242424;
+    transition: 0.18s;
 }
 
-.msg-on{
-    display: flex;
-} */
+#voltar-btn:hover{
+    filter: saturate(250%);
+}
+
+@media screen and (min-width: 1750px){
+    #voltar-btn{
+        width: 58px;
+    }
+    
+    #link-voltar{
+        right: 28px;
+    }
+}
+
+@media screen and (min-width: 2500px){
+    #voltar-btn{
+        width: 80px;
+    }
+    
+    #link-voltar{
+        bottom: 20px;
+        right: 35px;
+    }
+}
+
+@media screen and (min-width: 3300px){    
+    #voltar-btn{
+        width: 118px;
+    }
+    
+    #link-voltar{
+        bottom: 30px;
+        right: 45px;
+    }
+}
+
+@media screen and (min-width: 4800px){  
+    #voltar-btn{
+        width: 160px;
+    }
+    
+    #link-voltar{
+        bottom: 38px;
+        right: 55px;
+    }
+}
+
+@media screen and (max-width: 643px){        
+    #voltar-btn{
+        width: 38px;
+    }
+    
+    #link-voltar{
+        bottom: 12px;
+        right: 22px;
+    }
+}
