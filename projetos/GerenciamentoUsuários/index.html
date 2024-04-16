@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/title-icon.svg" />
+    <script src="./script.js" defer></script>
+    <title>Gerenciamento de Usuários</title>
+</head>
+<body>
+    <form id="form">
+        <h1 id="title">Novo Usuário</h1>
+        <input type="text" placeholder="Nome" class="inputs" id="name" pattern="[A-Za-zÀ-ú']{2,}" required />
+        <input type="text" placeholder="Sobrenome" class="inputs" id="lastname" pattern="[A-Za-zÀ-ú ']{2,}" required />
+        <input type="text" placeholder="Como gostaria de ser chamado?" class="inputs" id="uid" pattern="^[a-zA-Z0-9_-]{3,16}$" required />
+        <label id="gender">Gênero:</label>
+        <section id="gen-section">
+            <div>
+                <input type="radio" value="male" name="gen" id="male" />
+                <label for="male">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" value="female" name="gen" id="female" />
+                <label for="female">Feminino</label>
+            </div>
+        </section>
+        <input type="email" placeholder="Email" class="inputs" id="email" pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$" required />
+        <input type="text" placeholder="CPF" class="inputs" id="cpf" autocomplete="off" maxlength="14" required />
+        <label id="date-label" for="date">Data de nascimento:</label>
+        <input type="date" id="date" required />
+        <label id="state" for="select-state">Estado:</label>
+        <select id="select-state" required></select>
+        <label id="city" for="select-city">Cidade:</label>
+        <select id="select-city" required></select>
+        <input type="submit" id="submit-btn" value="Cadastrar" />
+    </form>
+    <div id="container"></div>
+    <!-- <div id="message" class="msg-off"></div> -->
+    <div id="confirm" class="confirm-off"></div>
+</body>
+</html>
